@@ -4,6 +4,7 @@ dir="../OJ/HDU"
 for file in `ls $dir`
 do
 	if [ -d "$dir/$file" ];then
-		cp "$dir/$file/main.c" "$file.c"
+		file1=${file:0:1};
+		cp "$dir/$file/main.c" $file1"000+/$file.c"
 	fi
 done
